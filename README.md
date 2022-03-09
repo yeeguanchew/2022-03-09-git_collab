@@ -17,5 +17,12 @@
 	- 'git branch -d <NAME>' : delete a branch <NAME>
 		- Note: lower-case d (use -D for force delete)
 
+
 Changes to b1 commit 1
 Changes to b1 commit 2
+Changes to b2 commit 1
+Changes to b2 commit 2
+
+## conflicts
+
+git checkout -b conflict_branch_1 echo "Changes to b1 commit 1" >> README.md git status git add README.md git commit -m "b1 c1" echo "Changes to b1 commit 2" >> README.md git add README.md git commit -m "b1 c2" git checkout main git checkout -b conflict_
